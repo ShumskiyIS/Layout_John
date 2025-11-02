@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    justify-content: end;
+    align-items: center;
+    padding: 28px 60px 26px 0px;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    height: max-content;
+    gap: 34px;
+    margin-right: 60px;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        gap: 20px;
+    }
+}
+
+#first-container{
+    width: 100%;
+    height: 50%;
+}
+
+#wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 115px;
+    margin-top: 127px;
+    width: 100%;
+    height: 100%;
+}
+
+.i_am_john{
+    width: 40%;
+    height: 40%;
+    h1{
+        padding-top: 20px;
+    }
+    p{
+        margin-top: 20px;
+    }
+    button{
+        width: 208px;
+        height: 47px;
+        background-color: #FF6464;
+        color: white;
+        border: solid;
+        margin-top: 20px;
+    }
+}
+
+.photo{
+    position: relative;
+    .john_photo{
+        position: relative;
+        z-index: 2;
+        width:200px;
+        height: 200px;
+    }
+
+    .shape{
+        position: absolute;
+        z-index: 1;
+        width:200px;
+        height: 200px;
+        background-color: #EDF7FA;   
+        border-radius: 50%;
+        top: 20px;
+        right: 10px;
+    }
+}
+
+/* Second container*/
+
+#second-container{
+    width: 100%;
+    height: 50%;
+    background-color: #EDF7FA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.cont{
+    width: 80%;
+    height: 100%;
+    padding-bottom: 21px;
+}
+
+.sc-header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 21px;
+    p{
+        justify-self: start;
+    }
+    a{
+        justify-self: end;
+        text-decoration: none;
+        color: #00A8CC;
+    }
+}
+
+.recent-posts{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 21px;
+    gap: 20px;
+    .post1{
+        width: 45%;
+        height: 85%;
+        background-color: white;
+        padding: 30px;
+        .date{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        p{
+            margin-top: 20px;
+        }
+    }
+    .post2{
+        width: 45%;
+        height: 85%;
+        background-color: white;
+        padding: 30px;
+        .date{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        p{
+            margin-top: 20px;
+        }
+    }
+
+}
