@@ -3,70 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Личное портфолио Джона">
+    <link rel="icon" href="/assets/favicon/SiteLogo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
     <title>John</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav class="navigation">
-            <ul>
-                <li><a href="">Works</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
+        <nav aria-label="Main navigation">
+            <ul class="header__nav">
+                <li><a href="" class="header__href">Works</a></li>
+                <li><a href="" class="header__href">Blog</a></li>
+                <li><a href="" class="header__href">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div id="first-container">
-            <div id="wrap">
-                <div class="i_am_john">
-                    <h1>Hi, I am John,<br>Creative Technologist</h1>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    <button>Download Resume</button>
-                </div>
-                <div class="photo">
-                    <img src="img/Ellipse 1.png" alt="John" class="john_photo">
-                    <div class="shape"></div>
-                </div>
-            </div>
-        </div>
-        <div id="second-container">
-            <div class="cont">
-                <div class="sc-header">
-                    <p>Recent posts</p>
-                    <a href="">View all</a>
-                </div>
-                <div class="recent-posts">
-                    <div class="post1">
-                        <h2>Making a sesign system from scratch</h2>
-                        <div class="date">
-                            <p>12 Feb 2020</p>
-                            <p>|</p>
-                            <p>Design, Pattern</p>
-                        </div>
-                        <p>Amet minim mollit non deserunt ullamco est sit
-                        aliqua dolor do amet sint. Velit officia consequat
-                        duis enim velit mollit. Exercitation veniam
-                        consequat sunt nostrud amet.</p>
-                    </div>
-                    <div class="post2">
-                        <h2>Creating pixel perfect icons in Figma</h2>
-                        <div class="date">
-                            <p>12 Feb 2020</p>
-                            <p>|</p>
-                            <p>Figma, icon Design</p>
-                        </div>
-                        <p>Amet minim mollit non deserunt ullamco est sit
-                        aliqua dolor do amet sint. Velit officia consequat
-                        duis enim velit mollit. Exercitation veniam
-                        consequat sunt nostrud amet.</p>
-                    </div>
+        <section class="hero">
+            <div class="hero__content">
+                <header class="hero__text">
+                    <h1 class="hero__h1">Hi, I am John,
+                    Creative&nbsp;Technologist</h1>
+                    <p class="hero__p">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                    sint. Velit officia consequat duis enim velit mollit. Exercitation veniam
+                    consequat sunt nostrud amet.</p>
+                    <a href="" class="hero__btn">Download Resume</a>
+                </header>
+                <div class="hero__image">
+                    <img src="./assets/img/JohnPhoto.svg" alt="John's Photo" class="hero-photo">
+                    <div class="hero__image__background"></div>
                 </div>
             </div>
-        </div>
-        </main>
+        </section>
+        <section class="recent-posts">
+            <div class="recent__posts__content">
+                <header class="recent__posts__header">
+                    <h2 class="recent__posts__h2">Recent-posts</h2>
+                    <a href="" class="recent__posts__a">View all</a>
+                </header>
+                <div class="posts">
+                    <article class="first__post">
+                        <div class="first__post__content">
+                            <h3 class="first__post__content__h3">Making a design system from scratch</h3>
+                            <div class="first__post__date">
+                                <time datetime="2020-02-12">12 Feb 2020</time>
+                                <span>|</span>
+                                <p>Design, Pattern</p>
+                            </div>
+                            <div class="first__post__text">
+                                <p>Amet minim mollit non deserunt ullamco est sit
+                                aliqua dolor do amet sint. Velit officia consequat
+                                duis enim velit mollit. Exercitation veniam
+                                consequat sunt nostrud amet.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="second__post">
+                        <div class="second__post__content">
+                            <h3 class="second__post__content__h3">Creating pixel perfect icons in Figma</h3>
+                            <div class="second__post__date">
+                                <time datetime="2020-02-12">12 Feb 2020</time>
+                                <span>|</span>
+                                <p>Design, Pattern</p>
+                            </div>
+                            <div class="second__post__text">
+                                <p>Amet minim mollit non deserunt ullamco est sit
+                                aliqua dolor do amet sint. Velit officia consequat
+                                duis enim velit mollit. Exercitation veniam
+                                consequat sunt nostrud amet.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="featured-works">
+            <div class="featured__works__content">
+                <h2 class="featured__works__content__h2">Featured works</h2>
+                <div class="featured__works__articles">
+                    <article class="first__feature__work">
+                        <div class="first__feature__work__content">
+                            <img src="./assets/img/dashboards.jpg" alt="Designing Dashboards">
+                            <div class="first__feature__work__text">
+                                <h3 class="featured__work__h3">Designing Dashboards</h3>
+                                <div class="first__featured__work__date__and__type">
+                                    <time datetime="2020" class="featured__work__date">2020</time>
+                                    <p class="featured__work__type">Dashboard</p>
+                                </div>
+                                <div class="first__featured__work__text">
+                                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequant duis enim velit mollit. Exercitation veniam consequat sunt
+                                    nostrud amet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="second__feature__work">
+                        <div class="second__feature__work__content">
+                            <img src="./assets/img/vibrant.jpg" alt="Vibrant Portraits of 2020">
+                            <div class="second__feature__work__text">
+                                <h3  class="featured__work__h3">Vibrant Portraits of 2020</h3>
+                                <div class="second__featured__work__date__and__type">
+                                    <time datetime="2018"  class="featured__work__date">2018</time>
+                                    <p class="featured__work__type">Illustration</p>
+                                </div>
+                                <div class="second__featured__work__text">
+                                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequant duis enim velit mollit. Exercitation veniam consequat sunt
+                                    nostrud amet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="third__feature__work">
+                        <div class="third__feature__work__content">
+                            <img src="./assets/img/typography.jpg" alt="36 Days of Malayalam type">
+                            <div class="third__feature__work__text">
+                                <h3  class="featured__work__h3">36 Days of Malayalam type</h3>
+                                <div class="third__featured__work__date__and__type">
+                                    <time datetime="2018" class="featured__work__date">2018</time>
+                                    <p class="featured__work__type">Typography</p>
+                                </div>
+                                <div class="third__featured__work__text">
+                                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequant duis enim velit mollit. Exercitation veniam consequat sunt
+                                    nostrud amet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
-
-    </footer>       
+        <nav aria-label="John's social links" class="nav__for__footer">
+            <ul class="footer__nav">
+                <li><a href=""><img src="./assets/favicon/Facebook.svg" alt="Facebook link"></a></li>
+                <li><a href=""><img src="./assets/favicon/Instagram.svg" alt="Instagram link"></a></li>
+                <li><a href=""><img src="./assets/favicon/Twitter.svg" alt="Twitter link"></a></li>
+                <li><a href=""><img src="./assets/favicon/Linkedin.svg" alt="Linkedin link"></a></li>
+            </ul>
+        </nav>
+        <p class="copyright">Copyright &copy;<time datetime="2020">2020</time> All rights reserved</p>
+    </footer>
 </body>
 </html>
